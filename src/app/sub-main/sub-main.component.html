@@ -1,0 +1,65 @@
+<!--<p *ngIf="path !== undefined && allData[0] !== undefined" >
+  {{ allData[0][path]|json }}
+</p>
+{{ path }}-->
+<div *ngIf="exist == false" > No info </div>
+<div *ngIf="allData !== undefined && exist == true" >
+  <h2> {{ path }} </h2>
+  <div *ngIf="allData[0][path]['description'] != null" >
+    <h4>Description</h4>
+    <p [innerHTML]="allData[0][path]['description']" >
+      <!--{{ allData[0][path]['description'] }}-->
+    </p>
+  </div>
+
+
+  <div *ngIf="allData[0][path]['description'] != null" > 
+    <h4>Initial Value:</h4>
+    <p [innerHTML]="allData[0][path]['descriptionInitial']">
+      <!--{{ allData[0][path]['descriptionInitial'] }}-->
+    </p>
+  </div> 
+
+  <div *ngIf="allData[0][path]['description'] != null" >
+  <h3>Description Example</h3>
+    <p [innerHTML]="allData[0][path]['descriptionEx']">
+      <!--{{ allData[0][path]['descriptionEx'] }}  -->
+    </p>
+  </div>  
+
+  <div *ngIf="allData[0][path]['description'] != null" >  
+    <h3>Syntax</h3>
+    <p [innerHTML]="allData[0][path]['syntax']">
+      <!--{{ allData[0][path]['syntax'] }}  -->
+    </p>
+  </div>
+
+  <div *ngIf="allData[0][path]['description'] != null" >
+    <h3>Values</h3>
+    <p [innerHTML]="allData[0][path]['description']">
+      {{ allData[0][path]['values']|json }}  
+    </p>
+  </div>  
+
+  <div *ngIf="allData[0][path]['description'] != null" >
+    <h3>HTML Ex.</h3>
+    <p [innerHTML]="allData[0][path]['htmlEx']">
+      <!--{{ allData[0][path]['htmlEx'] }}  -->
+    </p>
+  </div>
+
+  <div *ngIf="allData[0][path]['description'] != null" >
+    <h3>CSS Ex.</h3>
+    <p [innerHTML]="allData[0][path]['cssEx']">
+      <!--{{ allData[0][path]['cssEx'] }}  -->
+    </p>
+  </div> 
+
+  <div *ngIf="allData[0][path]['description'] != null" >
+    <h3>Result Ex.</h3>
+    <p [innerHTML]="allData[0][path]['resultEx']">
+      <!--{{ allData[0][path]['resultEx'] }}  -->
+    </p>
+  </div>
+
+</div>

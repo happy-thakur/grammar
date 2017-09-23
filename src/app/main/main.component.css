@@ -1,0 +1,18 @@
+div.sidebar{
+    position: fixed;
+    left: 0px;
+    top: 85px;
+    /* height: 557px; */
+    overflow: auto;
+    height: 80%;
+    width: 250px;
+}
+
+div.container {
+    position: fixed;
+    left: 260px;
+    top: 80px;
+    width: 80% !important;
+    overflow: auto;
+    height: 80%;
+}

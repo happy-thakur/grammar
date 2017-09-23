@@ -1,0 +1,13 @@
+<div class="sidebar">
+    <input type="text" #data (keyup)="filterData(data.value)" >
+    <ul>
+        <li *ngFor="let item of filtered">
+            <a [routerLink]="[format(item['link'])]">
+                {{ item['text'] }}
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

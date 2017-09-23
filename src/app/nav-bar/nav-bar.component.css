@@ -1,0 +1,43 @@
+input[type="text"] {
+    padding: 15px;
+    height: 40px;
+    font-size: 20px;
+    width: 100%;
+    /*border-right: 0px;*/
+    box-shadow: none !important;
+    /*border-radius: 50px;*/
+    width: 50%;
+    transition: all 1s linear 100ms;
+    /*background: red;*/
+
+}
+form.happ-search {
+    width: 60%;
+    display: inline-block;
+
+}
+form.happ-search div {
+    width: 100%;
+
+}
+input[type="text"]:focus {
+    width: 100%;
+    /*background: black;*/
+}
+.happ-search {
+    border-left: 0px;
+    /*padding: 9px;*/
+    display: none;
+}
+.navbar-default{
+    background-color: #4acad4;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 1px 3px 6px 1px rgba(128, 128, 128, 0.53);
+}
+.navbar-default i {
+    color: white;
+}
+.navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:visited, .navbar-default .navbar-nav>.open>a:active {
+    background: rgba(53, 158, 166, 0.46);
+}
