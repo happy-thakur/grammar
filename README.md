@@ -10,14 +10,10 @@
     1> Nodejs
     2> MongoDB
 </p>
-        
-        
-            
-        
 
-
-    <br><br>
-
+<br>
+<br>
     <img src="./one.png" alt="one">
     <br>    
     <img src="./two.png" alt="one">
+    
